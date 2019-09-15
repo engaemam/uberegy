@@ -2,6 +2,15 @@
 <html>
 
 
+<head>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-7339405950903636",
+    enable_page_level_ads: true
+  });
+</script>
+</head>
+
 <style>
 /*custom font*/
 @import url(https://fonts.googleapis.com/css?family=Montserrat);

@@ -2,6 +2,12 @@
 <html lang="en">
 
 <head>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-7339405950903636",
+    enable_page_level_ads: true
+  });
+</script>
 <meta name=viewport content="width=device-width, initial-scale=1"><meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>اوبر مصر</title><meta name="keywords" content=""><meta name="description" content="">
 <script src="../lib/jquery/dist/jquery.min.js" ></script>
@@ -754,12 +760,7 @@ $("#CarModelAcc").css("height","auto")
         var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
     })();
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<script>
-  (adsbygoogle = window.adsbygoogle || []).push({
-    google_ad_client: "ca-pub-7339405950903636",
-    enable_page_level_ads: true
-  });
-</script>
+
 </script>
 
 </html>

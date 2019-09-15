@@ -753,7 +753,13 @@ $("#CarModelAcc").css("height","auto")
         s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
         var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
     })();
-    
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-7339405950903636",
+    enable_page_level_ads: true
+  });
+</script>
 </script>
 
 </html>

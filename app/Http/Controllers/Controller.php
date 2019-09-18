@@ -8,6 +8,7 @@ use Illuminate\Foundation\Validation\ValidatesRequests;
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use App\uberusers;
 use App\uberfiles;
+use App\uberscooters;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Http\Request;
 class Controller extends BaseController
@@ -39,9 +40,16 @@ class Controller extends BaseController
 
     }
 
-    public function upload(Request $request)
+    public function uploadcar(Request $request)
     {
         $application = new uberfiles();
+        $application->profile =$request->fname . '.' . $request->file('profile')->getClientOriginalName();
+        $fileName = $request->fname . '.' . 
+        $request->file('profile')->getClientOriginalName();
+
+        $request->file('profile')->move(
+            base_path() . '/public/uploads/', $fileName
+        );
         $application->flisence =$request->fname . '.' . $request->file('flisence')->getClientOriginalName();
         $fileName = $request->fname . '.' . 
         $request->file('flisence')->getClientOriginalName();
@@ -73,14 +81,56 @@ class Controller extends BaseController
             base_path() . '/public/uploads/', $fileName
         );
         
-        $application->Uid =$request->fname . '.' .$request->file('Uid')->getClientOriginalName();
+       
+        $application->email=$request->email;
+        $application->save();
+        return redirect('/thanks');
+       
+
+    }
+
+    public function uploadscooter(Request $request)
+    {
+        $application = new uberscooters();
+        $application->profile =$request->fname . '.' . $request->file('profile')->getClientOriginalName();
+        $fileName = $request->fname . '.' . 
+        $request->file('profile')->getClientOriginalName();
+
+        $request->file('profile')->move(
+            base_path() . '/public/uploads/', $fileName
+        );
+        $application->flisence =$request->fname . '.' . $request->file('flisence')->getClientOriginalName();
+        $fileName = $request->fname . '.' . 
+        $request->file('flisence')->getClientOriginalName();
+
+        $request->file('flisence')->move(
+            base_path() . '/public/uploads/', $fileName
+        );
+        $application->blisence =$request->fname . '.' . $request->file('blisence')->getClientOriginalName();
         
+        $fileName = $request->fname . '.' . 
+        $request->file('blisence')->getClientOriginalName();
+
+        $request->file('blisence')->move(
+            base_path() . '/public/uploads/', $fileName
+        );
+        $application->dlisence =$request->fname . '.' . $request->file('dlisence')->getClientOriginalName();
+        $fileName = $request->fname . '.' . 
+        $request->file('dlisence')->getClientOriginalName();
+
+        $request->file('dlisence')->move(
+            base_path() . '/public/uploads/', $fileName
+        );
+
+        $application->Uid = $request->fname . '.' . $request->file('Uid')->getClientOriginalName();
         $fileName = $request->fname . '.' . 
         $request->file('Uid')->getClientOriginalName();
 
         $request->file('Uid')->move(
             base_path() . '/public/uploads/', $fileName
         );
+        
+       
         $application->email=$request->email;
         $application->save();
         return redirect('/thanks');

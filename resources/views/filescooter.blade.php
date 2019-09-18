@@ -46,11 +46,11 @@
       </th>
       <th class="th-lg">Profile
       </th>
-      <th class="th-lg">Car Lisence F
+      <th class="th-lg">Scooter Lisence F
       </th>
-      <th class="th-lg">Car Lisence B
+      <th class="th-lg">Scooter Lisence B
       </th>
-      <th class="th-lg">Criminal Report
+      <th class="th-lg">Uid
       </th>
       <th class="th-lg">Driving Lisence
       </th>
@@ -69,7 +69,7 @@
       <td><a href="/uploads/{{$file->profile}}" download><img src="/uploads/{{$file->profile}}" alt="Image" style="width:100px;height:100px;"/>  </a></td>
       <td><a href="/uploads/{{$file->flisence}}" download><img src="/uploads/{{$file->flisence}}" alt="Image" style="width:100px;height:100px;"/>  </a></td>
       <td><a href="/uploads/{{$file->blisence}}" download><img src="/uploads/{{$file->blisence}}" alt="Image" style="width:100px;height:100px;"/>  </a></td>
-      <td><a href="/uploads/{{$file->fesh}}" download><img src="/uploads/{{$file->fesh}}" alt="Image" style="width:100px;height:100px;"/>  </a></td>
+      <td><a href="/uploads/{{$file->Uid}}" download><img src="/uploads/{{$file->Uid}}" alt="Image" style="width:100px;height:100px;"/>  </a></td>
       <td><a href="/uploads/{{$file->dlisence}}" download><img src="/uploads/{{$file->dlisence}}" alt="Image" style="width:100px;height:100px;"/>  </a></td>
 
       <td>{{$file->created_at}}</td>

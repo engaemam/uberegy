@@ -152,8 +152,11 @@ body {
         </style>
 <body>
 <!-- multistep form -->
-
+@if( $vehicle == 'Car')
 <form id="msform" action="/upload" method="post" enctype="multipart/form-data">
+@else
+<form id="msform" action="/uploadsc" method="post" enctype="multipart/form-data">
+@endif
 {{csrf_field()}}
 	<!-- progressbar -->
 	<ul id="progressbar">
@@ -227,7 +230,7 @@ body {
 
 		<input type="text" name="fname" class="previous action-button" value="{{$fname}}" hidden/>
 		
-		<input type="submit" name="submit" class="previous action-button" value="رفع المستندات" />
+		<input type="submit" name="submit"  value="رفع المستندات" />
 
 	</fieldset>
 	@endif
@@ -273,7 +276,7 @@ body {
         <h2 class="fs-title">صورة رخصة قيادة الدراجة النارية</h2>
         <h3 class="fs-subtitle">الخطوة الخامسة</h3>
         <img src="https://www.ahlmasrnews.com/upload/photo/news/54/4/600x338o/16.jpg" alt="Girl in a jacket" style="width:320PX;height:200px;">
-        <input  Required type="file" class="form-control-file" id="fesh" name="fesh" >
+        <input  Required type="file" class="form-control-file" id="dlisence" name="dlisence" >
   </br>
  
 		<input type="button" name="previous" class="previous action-button" value="Previous" />
@@ -282,11 +285,12 @@ body {
 
 		<input type="text" name="fname" class="previous action-button" value="{{$fname}}" hidden/>
 		
-		<input type="submit" name="submit" class="previous action-button" value="رفع المستندات" />
+		<input type="submit" name="submit"  value="رفع المستندات" />
 
 	</fieldset>
 	@endif
 	<input type="text" name="email" class="previous action-button" value="{{$email}}" hidden/>
+
 </form>
 
 <!-- jQuery -->

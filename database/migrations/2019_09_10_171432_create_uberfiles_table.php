@@ -16,6 +16,7 @@ class CreateUberfilesTable extends Migration
         Schema::create('uberfiles', function (Blueprint $table) {
             $table->increments('id');
             $table->string('email')->unique();
+            $table->string('profile');
             $table->string('flisence');
             $table->string('blisence');
             $table->string('fesh');

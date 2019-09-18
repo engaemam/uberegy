@@ -38,7 +38,8 @@
       <div class="list-group list-group-flush">
         <a href="/u01115777em" class="list-group-item list-group-item-action bg-light">Dashboard</a>
         <a href="/uberusers" class="list-group-item list-group-item-action bg-light">شركاء اوبر</a>
-        <a href="/uberfiles" class="list-group-item list-group-item-action bg-light">المستندات</a>
+        <a href="/uberfiles" class="list-group-item list-group-item-action bg-light"> المستندات سيارة</a>
+        <a href="/scooter" class="list-group-item list-group-item-action bg-light">المستندات اسكوتر</a>
  
         <a class="dropdown-item" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
@@ -79,6 +80,7 @@
                         @guest
                             <li class="nav-item">
                                 <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
+                           
                             </li>
                            
                         @else

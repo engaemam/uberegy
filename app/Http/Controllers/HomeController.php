@@ -24,7 +24,9 @@ class HomeController extends Controller
     public function index()
     {
         $users = DB::table('uberusers')->count();
-        $files = DB::table('uberfiles')->count();  
+        $files = DB::table('uberfiles')->count(); 
+        $files1 = DB::table('uberscooters')->count();   
+        $files+=$files1;
         return view('home',compact('users','files'));
     }
    
@@ -38,6 +40,11 @@ class HomeController extends Controller
     {
         $files =  DB::table('uberfiles')->orderBy('created_at', 'desc')->paginate(75);
         return view('files',compact('files'));
+    }
+    public function showscooter()
+    {
+        $files =  DB::table('uberscooters')->orderBy('created_at', 'desc')->paginate(75);
+        return view('filescooter',compact('files'));
     }
 
 }

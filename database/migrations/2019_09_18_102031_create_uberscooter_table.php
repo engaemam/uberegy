@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateUberTable extends Migration
+class CreateUberscooterTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,17 +13,17 @@ class CreateUberTable extends Migration
      */
     public function up()
     {
-        Schema::create('uberusers', function (Blueprint $table) {
+        Schema::create('uberscooter', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('fname');
-            $table->string('lname');
-            $table->string('number');
-            $table->string('govern');
-            $table->string('vehicle');
             $table->string('email')->unique();
-           
+            $table->string('profile');
+            $table->string('flisence');
+            $table->string('blisence');
+            $table->string('dlisence');
+            $table->string('Uid');
             $table->rememberToken();
             $table->timestamps();
+        
         });
     }
 
@@ -34,6 +34,6 @@ class CreateUberTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('uberusers');
+        Schema::dropIfExists('uberscooter');
     }
 }

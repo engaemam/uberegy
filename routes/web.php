@@ -27,15 +27,15 @@ Route::get('/thanks', function () {
 
 
 Route::post('/contact/apply','Controller@apply_now')->name('send.request');
-Route::post('/upload','Controller@upload');
+Route::post('/upload','Controller@uploadcar');
+Route::post('/uploadsc','Controller@uploadscooter');
 Route::get('/uberusers','HomeController@showmessages');
 Route::get('/uberfiles','HomeController@showfiles');
-
+Route::get('/scooter','HomeController@showscooter');
 Route::get('/deleteU/id={id}', 'Controller@deleteDoc');
 Route::get('/delete/id={id}', 'Controller@deletefile');
 
 Route::get('/show/email={email}', 'Controller@showfile');
-
 
 Route::get('u01115777em/login', 'Auth\LoginController@showLoginForm')->name('login');
 Route::post('u01115777em/login', 'Auth\LoginController@login');

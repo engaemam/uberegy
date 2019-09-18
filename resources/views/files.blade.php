@@ -68,7 +68,6 @@
   @foreach($files as $file)
     <tr>
     <td>{{$file->id}}</td>
-
       <td><a href="/show/email={{$file->email}}"> {{$file->email}} </a> </td>
       <td><a href="/uploads/{{$file->profile}}" download><img src="/uploads/{{$file->profile}}" alt="Image" style="width:100px;height:100px;"/>  </a></td>
       <td><a href="/uploads/{{$file->flisence}}" download><img src="/uploads/{{$file->flisence}}" alt="Image" style="width:100px;height:100px;"/>  </a></td>

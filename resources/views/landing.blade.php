@@ -9,7 +9,7 @@
   });
 </script>
 <meta name=viewport content="width=device-width, initial-scale=1"><meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>اوبر مصر</title><meta name="keywords" content=""><meta name="description" content="">
+<title>اوبر مباشر مصر</title><meta name="keywords" content=""><meta name="description" content="">
 <script src="../lib/jquery/dist/jquery.min.js" ></script>
 <style>body{overflow:hidden}#preloader{position:fixed;top:0;left:0;right:0;bottom:0;background-color:#fff;z-index:99000000;text-align:center}.lds-dual-ring{display:inline-block;width:64px;height:64px;margin-top:33%}.lds-dual-ring:after{content:" ";display:block;width:46px;height:46px;margin:1px;border-radius:50%;border:5px solid #fcf;border-color:#f0d83a transparent;animation:lds-dual-ring 1.2s linear infinite}@keyframes lds-dual-ring{0%{transform:rotate(0)}100%{transform:rotate(360deg)}}
 
@@ -21,7 +21,7 @@ input[type="text"],input[type="email"],select{text-align:right}.btn-link:hover{t
   .wh-widget-send-button-get-button{display:none}body{overflow:hidden}#preloader{position:fixed;top:0;left:0;right:0;bottom:0;background-color:#fff;z-index:99000000;text-align:center}.lds-dual-ring{display:inline-block;width:64px;height:64px;margin-top:33%}.lds-dual-ring:after{content:" ";display:block;width:46px;height:46px;margin:1px;border-radius:50%;border:5px solid #CCC;border-color:#CCC transparent;animation:lds-dual-ring 1.2s linear infinite}@keyframes lds-dual-ring{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}.grecaptcha-badge{display:none}
 </style>
   <meta charset="utf-8">
-  <title>Uber Egypt</title>
+  <title>Uber Direct Egypt</title>
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta content="" name="keywords">
   <meta content="" name="description">
@@ -69,10 +69,11 @@ input[type="text"],input[type="email"],select{text-align:right}.btn-link:hover{t
     <div class="hero-container">
       <div class="wow fadeIn">
         <div class="hero-logo">
-          <img class="" src="img/logo.jpg" alt="Imperial">
+        <h1><span class="rotating">Uber Direct Partner, شركاء اوبر مباشر</span></h1>
+        <br>
         </div>
 
-        <h1>Welcome to Uber Egypt</h1>
+      
         <h1><span class="rotating">دعم فني, بونص ترحيبي, تسجيل مباشر</span></h1>
         <br>
         <div class="actions">
@@ -101,7 +102,7 @@ input[type="text"],input[type="email"],select{text-align:right}.btn-link:hover{t
     <div class="container">
 
       <div id="logo" class="pull-left">
-        <a href="#hero"><img src="img/logo.jpg" alt="" title="" /></img></a>
+       <h1> Uber Partner Direct</h1>
         <!-- Uncomment below if you prefer to use a text image -->
         <!--<h1><a href="#hero">Header 1</a></h1>-->
       </div>
@@ -114,8 +115,7 @@ input[type="text"],input[type="email"],select{text-align:right}.btn-link:hover{t
           <li><a href="#portfolio">تعريفة اوبر</a></li>
           <li><a href="#testimonials">أماكن الفحص والتخليل</a></li>
           
-          
-          <li><a href="#contact">Contact Us</a></li>
+         
         </ul>
       </nav>
       <!-- #nav-menu-container -->
@@ -495,7 +495,7 @@ input[type="text"],input[type="email"],select{text-align:right}.btn-link:hover{t
       <div class="row">
         <div class="col-md-12">
           <div class="copyright">
-            &copy; Copyright <strong>Imperial Theme</strong>. All Rights Reserved
+            &copy; Copyright <strong>EM FreeLancer</strong>. All Rights Reserved
           </div>
           <div class="credits">
             <!--
@@ -504,7 +504,7 @@ input[type="text"],input[type="email"],select{text-align:right}.btn-link:hover{t
               Licensing information: https://bootstrapmade.com/license/
               Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Imperial
             -->
-            Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+           
           </div>
         </div>
       </div>

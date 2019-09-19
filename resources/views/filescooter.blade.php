@@ -73,7 +73,7 @@
       <td><a href="/uploads/{{$file->dlisence}}" download><img src="/uploads/{{$file->dlisence}}" alt="Image" style="width:100px;height:100px;"/>  </a></td>
 
       <td>{{$file->created_at}}</td>
-     <td> <a href="/delete/id={{$file->id}}" class="btn btn-danger">Delete</a></td>
+     <td> <a href="/deleteS/id={{$file->id}}" class="btn btn-danger">Delete</a></td>
     </tr>
    @endforeach
   </tbody>

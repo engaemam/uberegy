@@ -3,12 +3,7 @@
 <html lang="en">
 <head>
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<script>
-  (adsbygoogle = window.adsbygoogle || []).push({
-    google_ad_client: "ca-pub-6587248040158991",
-    enable_page_level_ads: true
-  });
-</script>
+
         <link 
         rel="stylesheet"
         href="https://cdn.rtlcss.com/bootstrap/v4.1.3/css/bootstrap.min.css"

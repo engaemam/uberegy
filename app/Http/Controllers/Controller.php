@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use Exception;
 use Illuminate\Foundation\Bus\DispatchesJobs;
 use Illuminate\Routing\Controller as BaseController;
 use Illuminate\Foundation\Validation\ValidatesRequests;
@@ -16,7 +16,7 @@ class Controller extends BaseController
     use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
     public function apply_now(Request $request)
     { 
-        
+        try{
         $application = new uberusers();
         $email = $request->email;
         $application->fname=$request->fname;
@@ -26,7 +26,10 @@ class Controller extends BaseController
         $application->vehicle=$request->radio;
         $application->govern=$request->govern;
         $application->save();
-        
+        }catch(Exception $exception)
+        {
+            $errormsg = 'Database error! ' . $exception->getCode();
+        }
         $data = [
             'fname'  => $request->fname,
             'lname'   => $request->lname,
@@ -42,6 +45,7 @@ class Controller extends BaseController
 
     public function uploadcar(Request $request)
     {
+        try{
         $application = new uberfiles();
         $application->profile =$request->fname . '.' . $request->file('profile')->getClientOriginalName();
         $fileName = $request->fname . '.' . 
@@ -84,6 +88,11 @@ class Controller extends BaseController
        
         $application->email=$request->email;
         $application->save();
+    }
+        catch(Exception $exception)
+        {
+            $errormsg = 'Database error! ' . $exception->getCode();
+        }
         return redirect('/thanks');
        
 
@@ -159,5 +168,12 @@ class Controller extends BaseController
     $subs = uberfiles::findOrFail($id);
     $subs->delete();
     return redirect('/uberfiles');
+    }
+    
+    public function deletefiles($id)
+    {   
+    $subs = uberscooters::findOrFail($id);
+    $subs->delete();
+    return redirect('/scooter');
     }
 }

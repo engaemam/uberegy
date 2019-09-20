@@ -59,7 +59,30 @@ input[type="text"],input[type="email"],select{text-align:right}.btn-link:hover{t
 
 
 </head>
+<header id="header">
+    <div class="container">
 
+      <div id="logo" class="pull-left">
+       <h1>Uber Partner</h1>
+        <!-- Uncomment below if you prefer to use a text image -->
+        <!--<h1><a href="#hero">Header 1</a></h1>-->
+      </div>
+
+      <nav id="nav-menu-container">
+        <ul class="nav-menu">
+          <li class="menu-active"><a href="#hero">الصفحة الرئيسية</a></li>
+          <li><a href="#about">الموديلات المقبولة</a></li>
+          <li><a href="#services">شروط التسجيل</a></li>
+          <li><a href="#portfolio">تعريفة اوبر</a></li>
+          <li><a href="#testimonials">أماكن الفحص والتخليل</a></li>
+          
+         
+        </ul>
+      </nav>
+      <!-- #nav-menu-container -->
+    </div>
+  </header>
+  <!-- #header -->
 <body>
   <div id="preloader"></div>
 
@@ -67,8 +90,11 @@ input[type="text"],input[type="email"],select{text-align:right}.btn-link:hover{t
   Hero Section
   ============================-->
   <section id="hero">
+  
     <div class="hero-container">
+      
       <div class="wow fadeIn">
+      
         <div class="hero-logo">
         <h1><span class="rotating">Uber Direct Partner, شركاء اوبر مباشر</span></h1>
         <br>
@@ -79,7 +105,7 @@ input[type="text"],input[type="email"],select{text-align:right}.btn-link:hover{t
         <br>
         <div class="actions">
        
-          <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">سجل الأن</button>
+          <button type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target="#myModal">سجل الأن</button>
           <a href="#services" class="btn-services">شروط التسجيل</a>
         </div>
       </div>
@@ -99,29 +125,7 @@ input[type="text"],input[type="email"],select{text-align:right}.btn-link:hover{t
   <!--==========================
   Header Section
   ============================-->
-  <header id="header">
-    <div class="container">
-
-      <div id="logo" class="pull-left">
-       <h1> Uber Partner Direct</h1>
-        <!-- Uncomment below if you prefer to use a text image -->
-        <!--<h1><a href="#hero">Header 1</a></h1>-->
-      </div>
-
-      <nav id="nav-menu-container">
-        <ul class="nav-menu">
-          <li class="menu-active"><a href="#hero">الصفحة الرئيسية</a></li>
-          <li><a href="#about">الموديلات المقبولة</a></li>
-          <li><a href="#services">شروط التسجيل</a></li>
-          <li><a href="#portfolio">تعريفة اوبر</a></li>
-          <li><a href="#testimonials">أماكن الفحص والتخليل</a></li>
-          
-         
-        </ul>
-      </nav>
-      <!-- #nav-menu-container -->
-    </div>
-  </header>
+ 
   <!-- #header -->
 
   <!--==========================
@@ -170,9 +174,15 @@ input[type="text"],input[type="email"],select{text-align:right}.btn-link:hover{t
 </div>
 <textarea id="CarModelAcc" style="width:100%;font-size: 18px !important;background: none;border: none;box-shadow: none;-moz-appearance: none;-webkit-appearance: none; height: auto !important; color: #000; padding-top: 20px;cursor: default;line-height: 25px !important;visibility:hidden; height: auto;" disabled class="rsform-text-box"></textarea>
 
-<div class="form-group">
-   <div class="col-6 m-auto">    <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">سجل الأن</button></div>
+
+
+
+
 </div>
+
+</div>
+<div class="col-md-12 col-sm-6 col-xs-6">
+<button type="button" class="btn btn-success btn-block" data-toggle="modal" data-target="#myModal">سجل الأن</button>
 </div>
 </form>
     </div>
@@ -242,7 +252,7 @@ input[type="text"],input[type="email"],select{text-align:right}.btn-link:hover{t
         </div>
         <div class="col-md-4 subscribe-btn-container">
           
-        <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">إشترك الأن</button>
+        <button type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target="#myModal">إشترك الأن</button>
         </div>
       </div>
     </div>

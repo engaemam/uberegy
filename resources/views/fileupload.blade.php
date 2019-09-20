@@ -3,7 +3,20 @@
 
 
 <head>
+<link href="favicon.ico" rel="shortcut icon">
 
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800" rel="stylesheet">
+
+<!-- Bootstrap CSS File -->
+<link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Libraries CSS Files -->
+<link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+<link href="lib/animate-css/animate.min.css" rel="stylesheet">
+
+<!-- Main Stylesheet File -->
+<link href="css/style.css" rel="stylesheet">
 </head>
 
 <style>
@@ -157,17 +170,19 @@ body {
 	<ul id="progressbar">
 		 
 		   @if( $vehicle == 'Car')
-		   <li class="active">صورة شخصية</li>
+		   <li class="active">الفيش الجنائي</li>
+		   <li>صورة رخصة القيادة</li>
+		   <li >صورة شخصية</li>
 		   <li>وجة رخصة السيارة</li>
 		   <li>	صورة خلفيه رخصة السيارة</li>
-		   <li>الفيش الجنائي</li>
-		   <li>صورة رخصة القيادة</li>
 		   @else
-		   <li class="active">صورة شخصية</li>
+		   <li class="active">صورة بطاقة الرقم القومي</li>
+		   <li>صورة رخصة قيادة دراجة نارية</li>
+		   <li >صورة شخصية</li>
 		   <li>وجة رخصة الأسكوتر</li>
 		   <li>	صورة خلفيه لرخصة للأسكوتر</li>
-		   <li>صورة بطاقة الرقم القومي</li>
-		   <li>صورة رخصة قيادة دراجة نارية</li>
+		 
+		   
 		   @endif
 		  
   	
@@ -175,48 +190,53 @@ body {
 	</ul>
 	<!-- fieldsets -->
 	@if($vehicle == 'Car')
-	<fieldset>
-		<h2 class="fs-title">صورة شخصية</h2>
-        <h3 class="fs-subtitle">الخطوة الأولى</h3>
-        <img src="https://cdn3.iconfinder.com/data/icons/social-messaging-productivity-6/128/profile-male-circle2-512.png" alt="Girl in a jacket" style="width:200px;height:200px;">
-        <input  Required type="file" class="form-control-file" id="profile" name="profile" >
-		<input type="button" name="next" class="next action-button" value="التالي" />
-	</fieldset>
-	<fieldset>
-		<h2 class="fs-title">وجة رخصة السيارة</h2>
-        <h3 class="fs-subtitle">الخطوة الثانية</h3>
-        <img src="/img/flisence1.jpg" alt="Girl in a jacket" style="width:300px;height:200px;">
-        <input  Required type="file" class="form-control-file" id="flisence" name="flisence" >
-		<input type="button" name="next" class="next action-button" value="التالي" />
-	</fieldset>
-	<fieldset>
-		<h2 class="fs-title">صورة خلفية لرخصة السيارة</h2>
-        <h3 class="fs-subtitle">الخطوة الثالثة</h3>
-        <img src="/img/blisence.jpg" alt="Girl in a jacket" style="width:300px;height:200px;">
-        <input  Required type="file" class="form-control-file" id="blisence" name="blisence" >
 	
-  </br>
+<fieldset>
+		
+		<h2 class="fs-title">صورة الفيش الجنائي</h2>
+        <h3 class="fs-subtitle">الخطوة الأولى</h3>
+        <img src="https://www.elmwatin.com/upload/photo/gallery/31/8/596.jpg" alt="Girl in a jacket" style="width:300px;height:350px;">
+        <input  Required type="file" class="form-control-file" id="fesh" name="fesh" >
+	
+        <br>
+		<input type="button" name="next" class="next action-button" value="التالي" />
+	</fieldset>
+
+	<fieldset>
+		<h2 class="fs-title">صورة رخصة القيادة</h2>
+        <h3 class="fs-subtitle">الخطوة الثانية</h3>
+		<img src="https://www.ahlmasrnews.com/upload/photo/news/54/4/600x338o/16.jpg" alt="Girl in a jacket" style="width:320PX;height:200px;">
+        <input  Required type="file" class="form-control-file" id="dlisence" name="dlisence" >
 		<input type="button" name="previous" class="previous action-button" value="رجوع" />
 		<input type="button" name="next" class="next action-button" value="التالي" />
 	</fieldset>
 
-<fieldset>
-		
-		<h2 class="fs-title">صورة الفيش الجنائي</h2>
-        <h3 class="fs-subtitle">الخطوة الرابعة</h3>
-        <img src="https://www.elmwatin.com/upload/photo/gallery/31/8/596.jpg" alt="Girl in a jacket" style="width:300px;height:350px;">
-        <input  Required type="file" class="form-control-file" id="dlisence" name="dlisence" >
-	
-  </br>
+	<fieldset>
+		<h2 class="fs-title">صورة شخصية</h2>
+        <h3 class="fs-subtitle">الخطوة الثالثة</h3>
+        <img src="https://cdn3.iconfinder.com/data/icons/social-messaging-productivity-6/128/profile-male-circle2-512.png" alt="Girl in a jacket" style="width:200px;height:200px;">
+        <input  Required type="file" class="form-control-file" id="profile" name="profile" >
 		<input type="button" name="previous" class="previous action-button" value="رجوع" />
 		<input type="button" name="next" class="next action-button" value="التالي" />
 	</fieldset>
+
+	<fieldset>
+		<h2 class="fs-title">وجة رخصة السيارة</h2>
+        <h3 class="fs-subtitle">الخطوة الرابعة</h3>
+		<img src="https://www.ahlmasrnews.com/upload/photo/news/54/4/600x338o/16.jpg" alt="Girl in a jacket" style="width:320PX;height:200px;">
+        <input  Required type="file" class="form-control-file" id="flisence" name="flisence" >
+		<input type="button" name="previous" class="previous action-button" value="رجوع" />
+		<input type="button" name="next" class="next action-button" value="التالي" />
+	</fieldset>
+
+
+
 <fieldset>
 	
-        <h2 class="fs-title">صورة رخصة القيادة</h2>
+<h2 class="fs-title">صورة خلفية لرخصة السيارة</h2>
         <h3 class="fs-subtitle">الخطوة الخامسة</h3>
-        <img src="https://www.ahlmasrnews.com/upload/photo/news/54/4/600x338o/16.jpg" alt="Girl in a jacket" style="width:320PX;height:200px;">
-        <input  Required type="file" class="form-control-file" id="fesh" name="fesh" >
+		<img src="/img/blisence.jpg" alt="Girl in a jacket" style="width:300px;height:200px;">
+        <input  Required type="file" class="form-control-file" id="blisence" name="blisence" >
   </br>
  
 		<input type="button" name="previous" class="previous action-button" value="Previous" />
@@ -231,19 +251,40 @@ body {
 	@endif
 	@if($vehicle=='Scooter')
 	<fieldset>
-		<h2 class="fs-title">صورة شخصية</h2>
+		<h2 class="fs-title">صورة بطاقة الرقم القومي</h2>
         <h3 class="fs-subtitle">الخطوة الأولى</h3>
+        <img src="https://www.elfagr.com/upload/photo/news/358/4/600x338o/664.jpg" alt="Girl in a jacket" style="width:320PX;height:200px;">
+        <input  Required type="file" class="form-control-file" id="Uid" name="Uid" >
+		<input type="button" name="next" class="next action-button" value="التالي" />
+	</fieldset>
+
+	<fieldset>
+		<h2 class="fs-title">صورة رخصة قيادة الدراجة النارية</h2>
+        <h3 class="fs-subtitle">الخطوة الثانية</h3>
+        <img src="https://www.ahlmasrnews.com/upload/photo/news/54/4/600x338o/16.jpg" alt="Girl in a jacket" style="width:320PX;height:200px;">
+        <input  Required type="file" class="form-control-file" id="dlisence" name="dlisence" >
+		<input type="button" name="previous" class="previous action-button" value="رجوع" />
+		<input type="button" name="next" class="next action-button" value="التالي" />
+	</fieldset>
+
+	<fieldset>
+		<h2 class="fs-title">صورة شخصية</h2>
+        <h3 class="fs-subtitle">الخطوة الثالثة</h3>
         <img src="https://cdn3.iconfinder.com/data/icons/social-messaging-productivity-6/128/profile-male-circle2-512.png" alt="Girl in a jacket" style="width:200px;height:200px;">
         <input  Required type="file" class="form-control-file" id="profile" name="profile" >
+		<input type="button" name="previous" class="previous action-button" value="رجوع" />
 		<input type="button" name="next" class="next action-button" value="التالي" />
 	</fieldset>
+
 	<fieldset>
 		<h2 class="fs-title">وجة رخصة الأسكوتر</h2>
-        <h3 class="fs-subtitle">الخطوة الثانية</h3>
+        <h3 class="fs-subtitle">الخطوة الرابعة</h3>
         <img src="/img/flisence1.jpg" alt="Girl in a jacket" style="width:300px;height:200px;">
         <input  Required type="file" class="form-control-file" id="flisence" name="flisence" >
+		<input type="button" name="previous" class="previous action-button" value="رجوع" />
 		<input type="button" name="next" class="next action-button" value="التالي" />
 	</fieldset>
+	
 	<fieldset>
 		<h2 class="fs-title">صورة خلفية لرخصة الأسكوتر</h2>
         <h3 class="fs-subtitle">الخطوة الثالثة</h3>
@@ -253,34 +294,12 @@ body {
   </br>
 		<input type="button" name="previous" class="previous action-button" value="رجوع" />
 		<input type="button" name="next" class="next action-button" value="التالي" />
-	</fieldset>
-	<fieldset>
-		<h2 class="fs-title">صورة بطاقة الرقم القومي</h2>
-		<h3 class="fs-subtitle">الخطوة الرابعة</h3>
-        <img src="https://www.elfagr.com/upload/photo/news/358/4/600x338o/664.jpg" alt="Girl in a jacket" style="width:320PX;height:200px;">
-        <input  Required type="file" class="form-control-file" id="Uid" name="Uid" >
-        <input type="button" name="previous" class="previous action-button" value="رجوع" />
-		<input type="button" name="next" class="next action-button" value="التالي" />
-		  
-		<input type="text" name="fname" class="previous action-button" value="{{$fname}}" hidden/>
-		
-
-	</fieldset>
-	<fieldset>
 	
-        <h2 class="fs-title">صورة رخصة قيادة الدراجة النارية</h2>
-        <h3 class="fs-subtitle">الخطوة الخامسة</h3>
-        <img src="https://www.ahlmasrnews.com/upload/photo/news/54/4/600x338o/16.jpg" alt="Girl in a jacket" style="width:320PX;height:200px;">
-        <input  Required type="file" class="form-control-file" id="dlisence" name="dlisence" >
-  </br>
- 
-		<input type="button" name="previous" class="previous action-button" value="Previous" />
-		
 
 
 		<input type="text" name="fname" class="previous action-button" value="{{$fname}}" hidden/>
 		
-		<input type="submit" name="submit"  value="رفع المستندات" />
+		<input type="submit" class="btn btn-success btn-block" name="submit"  value="رفع المستندات" />
 
 	</fieldset>
 	@endif

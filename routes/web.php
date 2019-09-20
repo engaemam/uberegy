@@ -36,6 +36,7 @@ Route::get('/deleteU/id={id}', 'Controller@deleteDoc');
 Route::get('/delete/id={id}', 'Controller@deletefile');
 Route::get('/deleteS/id={id}', 'Controller@deletefiles');
 Route::get('/show/email={email}', 'Controller@showfile');
+Route::get('/export_excel/excel', 'ExportExcelController@export')->name('export_excel.excel');
 
 Route::get('u01115777em/login', 'Auth\LoginController@showLoginForm')->name('login');
 Route::post('u01115777em/login', 'Auth\LoginController@login');

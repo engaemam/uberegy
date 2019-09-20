@@ -1,4 +1,5 @@
 @extends('layouts.app')
+<meta http-equiv="content-type" content="application/vnd.ms-excel; charset=UTF-8">
 <style>
 #myInput {
   background-image: url('/css/searchicon.png'); /* Add a search icon to input */
@@ -36,7 +37,7 @@
 @section('content')
 <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search ..">
 <button class="btn btn-primary hidden-print" onclick="printData()"><span class="glyphicon glyphicon-print" aria-hidden="true"></span> Print</button>
-<button  class="btn btn-success"  onclick="exportTableToExcel('myTable', 'members-data')">Export Table Data To Excel File</button>
+<a href="{{ route('export_excel.excel') }}" class="btn btn-success">Export to Excel</a>
 <table id="myTable" class="table table-striped table-bordered table-sm" cellspacing="0" width="100%">
   <thead>
     <tr>
@@ -125,36 +126,7 @@ function myFunction() {
   
 }
 
-function exportTableToExcel(tableID, filename = ''){
-    var downloadLink;
-    var dataType = 'application/vnd.ms-excel';
-    var tableSelect = document.getElementById(tableID);
-    var tableHTML = tableSelect.outerHTML.replace(/ /g, '%20');
-    
-    // Specify file name
-    filename = filename?filename+'.xls':'excel_data.xls';
-    
-    // Create download link element
-    downloadLink = document.createElement("a");
-    
-    document.body.appendChild(downloadLink);
-    
-    if(navigator.msSaveOrOpenBlob){
-        var blob = new Blob(['\ufeff', tableHTML], {
-            type: dataType
-        });
-        navigator.msSaveOrOpenBlob( blob, filename);
-    }else{
-        // Create a link to the file
-        downloadLink.href = 'data:' + dataType + ', ' + tableHTML;
-    
-        // Setting the file name
-        downloadLink.download = filename;
-        
-        //triggering the function
-        downloadLink.click();
-    }
-}
+
 </script>
 
 

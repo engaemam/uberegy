@@ -67,6 +67,7 @@ input[type="text"],input[type="email"],select{text-align:right}.btn-link:hover{t
         <!-- Uncomment below if you prefer to use a text image -->
         <!--<h1><a href="#hero">Header 1</a></h1>-->
       </div>
+  <!-- Uncomment below if you prefer to use a text image -->
 
       <nav id="nav-menu-container">
         <ul class="nav-menu">
